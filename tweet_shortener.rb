@@ -13,7 +13,12 @@ end
 
 def word_substituter(string)
   array = string.split(" ")
-  string.split(" ").each do |element|
+  
+  array.each do |element|
     dictionary.each do |key, value|
-      
+      element.replace(value) if element == key
+    end
+  end
+  
+  array.join(" ")
 end
