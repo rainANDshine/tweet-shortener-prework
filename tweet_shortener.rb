@@ -11,8 +11,8 @@ def dictionary
     "and" => "&"}
 end
 
-def word_substituter(string)
-  array = string.split(" ")
+def word_substituter(tweet)
+  array = tweet.split(" ")
   
   array.each do |element|
     dictionary.each do |key, value|
@@ -21,4 +21,8 @@ def word_substituter(string)
   end
   
   array.join(" ")
+end
+
+def bulk_tweet_shortener(tweet)
+  puts word_substituter(tweet)
 end
