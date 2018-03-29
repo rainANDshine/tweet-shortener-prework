@@ -12,5 +12,7 @@ def dictionary
 end
 
 def word_substituter(string)
-  
+  string.split(" ").each do |element|
+    dictionary.each do |key, value|
+      
 end
